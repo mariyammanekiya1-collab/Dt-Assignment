@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>DT</title>
+</head>
+<body>
+
+   <header>
+     <img src="./logo.svg" alt="Logo">   
+    <i class="fa-solid fa-house" style="color: #4471c1; margin-left: 70%; padding-right: 9px;"></i>
+    <i class="fa-solid fa-bell" style="color: #4471c1; " ></i> 
+     <h2>Technical Project Management</h2>
+   </header>
+
+<!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <div class="wrapper">
+     <h3>Journey Board</h3>
+     <button class="toggle-btn" id="toggleBtn">
+    <span class="arrow">➜</span>
+  </button>
+  </div>
+
+    <ul>
+    <li> 
+      <h3>Explore the world of management</h3> 
+    </li>
+    
+      <li>Technical Project Management</li>
+      <li>Threadbuild</li>
+      <li>Structure your pointers</li>
+      <li>4SA Method</li>
+    </ul>
+  </div>
+<!--notice bord-->
+<div class="notice-board" id="noticeBoard">
+    <div class="close-btn" onclick="closeBoard()" id="closeBtn">✕</div>
+
+    <div class="notice-text">
+      <span>N</span>
+      <span>o</span>
+      <span>t</span>
+      <span>i</span>
+      <span>c</span>
+      <span>e</span>
+      <br>
+      <span>B</span>
+      <span>o</span>
+      <span>a</span>
+      <span>r</span>
+      <span>d</span>
+    </div>
+  </div>
+  <div class="manage">
+   <h2 id="taskTitle"></h2>
+   <p id="taskDesc"></p>
+  </div>
+ 
+ <!--card sections-->
+  <main class="container">
+ <section class="grid">
+
+  <!--Video-->
+      <div class="card">
+        <div class="card-text">
+           <h3 id="videoTitle" > </h3>
+           <p>i</p>
+        </div>
+       <p class="Description">
+        <b>Description:</b>
+        <span id="videoDesc"></span> 
+      </p>
+           <iframe id="video" allowfullscreen></iframe>
+      </div>
+    
+      <!--Thread-->
+       <div class="card ">
+        <div class="card-text">
+           <h3 id="threadTitle"> </h3>
+           <p>i</p>
+        </div>
+      <p class="Description">
+        <b>Description:</b>
+        <span id="threadDesc"></span>
+      </p>
+      
+      <div class="Thread">
+        <h3>Thread A</h3>
+        <p class="router">&#xf106;</p>
+      </div>
+
+      <!--Teaxt input-->
+       <div class="text-section">
+      <div class="text-area">
+       <p>Sub thread 1</p>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Enter Text Here"></textarea>
+        <div class="icon-row">
+       <i class="fa-regular fa-lightbulb"></i>
+       <i class="fa-etch fa-solid fa-comment"></i>
+       <i class="fa-regular fa-circle-question"></i>
+       <i class="fa-solid fa-leaf"></i>
+      </div>
+       </div>
+
+       <div class="text-area">
+       <p>Sub Interpretation 1</p>
+       <textarea name="" id="" cols="30" rows="10" placeholder="Enter Text Here"></textarea>   
+       </div>
+     </div>
+
+       <div class="categ-bar">
+        <div class="categ">
+        <p>Select Categ</p>
+        <p class="router down-router">&#xf107;</p>
+      </div>
+     
+       <div class="categ">
+        <p>select proces</p>
+        <p class="router down-router">&#xf107;</p>
+      </div>
+    </div>
+
+    <button class="thread-button"> + Sub -Thread</button>
+      
+     <div class="summary-text-area">
+       <p>Summary for Sub thread 1</p>
+       <textarea name="" id="" cols="30" rows="10" placeholder="Enter Text Here"></textarea> 
+       </div>
+
+       </div>
+     
+       <!--Artical input-->
+
+    <div class="card">
+        <div class="card-text">
+         <h3 id="articalTitle"></h3>
+         <p>i</p>
+       </div>
+       <p class="Description">
+        <b>Description:</b>
+        <span id="articalDesc"></span>
+        </p>
+
+       <div class="artical-text">
+            <h3>Title</h3><br> 
+            <input type="text">
+       </div>
+       
+
+<h3 class="toolbar-title">Content</h3>
+
+  <div class="editor-container">
+    <!-- Toolbar -->
+    <div class="toolbar">
+      <span>File</span>
+      <span>Edit</span>
+      <span>View</span>
+      <span>Insert</span>
+      <span>Format</span>
+      <span>Tools</span>
+      <span>Table</span>
+      <span>Help</span>
+
+      <div class="toolbar-icons">
+        <span>↶</span>
+        <span>↷</span>
+        <span>⛶</span>
+        <select>
+          <option>Paragraph</option>
+        </select>
+        <span>⋯</span>
+      </div>
+    </div>
+
+    <!-- Content Area -->
+    <div class="editor-content">
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+    </div>
+  </div>
+      </div>
+
+
+<!--Artical Url-->
+      <div class="card">
+        <div class="card-text">
+           <h3 id="linkTitle"></h3>
+           <p>i</p>
+        </div>
+       <p class="Description">
+        <b>Description:</b> 
+        <span id="linkDesc"></span>
+      </p>
+      <div class="linkIntro">
+       <div class="link-bar">
+        <h3>Introduction</h3>
+        <p class="router">&#xf106;</p>
+      </div>
+ 
+      <div class="detail">
+        <p>The 4SA Method , How to bring a idea into progress ?</p>
+        <a href="" id="linkUrl">See More</a>
+      </div>
+
+        <div class="linkBarDesc">
+        <h3>Introduction</h3>
+        <p class="router">&#xf106;</p>
+      </div>
+ 
+      <div class="detail">
+        <p>How are you going to develop your stratergy ? Which method are you going to use to develop a stratergy ? What if the project is lengthy?</p>
+        <a href="" id="linkUrl">See More</a>
+      </div>
+
+      <div class="example">
+        <h3>Example</h3>
+        <p>You have a concept , How will you put into progress?</p>
+      </div>
+      </div>
+       
+      <div class="floating-icons">
+  <div class="fab-icon" title="Help">
+    <i class="fa-solid fa-question"></i>
+  </div>
+
+  <div class="fab-icon" title="Chat">
+    <i class="fa-solid fa-comment"></i>
+  </div>
+
+  <div class="fab-icon" title="Scroll Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </div>
+</div>
+      
+    
+      </section>
+  </main>
+    
+  <script src="script.js"></script>
+  
+</body>
+</html>
